@@ -45,7 +45,7 @@
 // Blueprint slots.
 #define BLUEPRINT_1 uint32_uint32_murmur
 #define BLUEPRINT_2 uint64_struct448_murmur
-#define BLUEPRINT_3 cstring_uint64_fnv1a
+// rigtorp/HashMap.h produces Segmentation fault on  #define BLUEPRINT_3 cstring_uint64_fnv1a
 // #define BLUEPRINT_4
 // #define BLUEPRINT_5
 // #define BLUEPRINT_6
@@ -76,4 +76,4 @@
 #define SHIM_13 stc_hmap
 #define SHIM_14 uthash
 #define SHIM_15 verstable
-// #define SHIM_15
+#define SHIM_16 rigtorp_hash_map // https://github.com/rigtorp/HashMap/blob/master/include/rigtorp/HashMap.h
